@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://test.landinghero.app/ -->
+<html lang="en"><plasmo-csui><template shadowrootmode="open"><style>.jQprBa_bar{color:#fff;background-color:#171717;align-items:center;width:100%;height:48px;padding:8px;font-family:Inter,sans-serif;font-size:14px;display:flex;position:fixed;top:0;left:0}.jQprBa_savePart{justify-content:center;align-items:center;width:100%;display:flex;position:relative}.jQprBa_formWrapper{align-items:center;display:flex}.jQprBa_text{margin-right:8px}.jQprBa_imageWrapper{align-items:center;margin-right:8px;display:flex}.jQprBa_imageWrapper>img{width:32px;height:32px}.jQprBa_input{color:#f0f0f0;background-color:#333;border:1px solid #444;border-radius:6px;outline:none;width:300px;margin-right:8px;padding:6px 10px;font-size:16px;transition:border-color .2s,box-shadow .2s}.jQprBa_input:focus{border-color:#7f56d9;box-shadow:0 0 0 4px #7f56d933}.jQprBa_input::placeholder{color:#888}.jQprBa_input:disabled{cursor:not-allowed;opacity:.6;background-color:#2a2a2a}.jQprBa_button{color:#f0f0f0;cursor:pointer;background-color:#6d28d9;border:none;border-radius:6px;padding:6px 14px;font-size:16px;transition:background-color .3s,box-shadow .3s}.jQprBa_inputButtonWrapper{align-items:center;display:flex}.jQprBa_buttonsWrapper{justify-content:flex-start;align-items:center;display:flex}.jQprBa_button:hover{background-color:#5b21b6;box-shadow:0 4px 12px #6d28d94d}.jQprBa_button:focus{outline:none;box-shadow:0 0 0 4px #6d28d980}.jQprBa_button:disabled{cursor:not-allowed;opacity:.6;background-color:#4a4a4a}.jQprBa_button:nth-child(2){margin-left:8px}.jQprBa_closeButton{cursor:pointer;margin-right:30px}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Monosend - Email for Developers</title>
+  <meta name="description" content="The best way to send transactional emails. Built for developers.">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link href="https://fonts.googleapis.com/" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect">
+  <link href="./css/css2" rel="stylesheet">
+
+  <style>
+    /* 1. Scroll Reveal Animation */
+    [data-anim] {
+      opacity: 0;
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    [data-anim="fade-up"] { transform: translateY(30px); }
+    [data-anim="fade-up-scale"] { transform: translateY(15px) scale(0.9); }
+    [data-anim].is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    @keyframes slide-down {
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* 2. Form Input Icons */
+    .input-wrapper { position: relative; }
+    .input-icon {
+        position: absolute; left: 20px; top: 50%;
+        transform: translateY(-50%); color: #9CA3AF; pointer-events: none;
+    }
+    .input-with-icon { padding-left: 52px !important; }
+
+    /* 3. Parallax Effect */
+    .parallax-layer {
+      transition: transform 0.1s cubic-bezier(0,0,0.2,1);
+      will-change: transform;
+    }
+
+    /* 4. Infinite Marquee Animation */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      /* Fade edges mask */
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+    .marquee-content {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      animation: scroll 60s linear infinite; /* Adjust speed here */
+    }
+    .marquee-content:hover {
+      animation-play-state: paused; /* Pauses on hover */
+    }
+    
+    /* Code block syntax highlighting style simulation */
+    .code-keyword { color: #c678dd; }
+    .code-string { color: #98c379; }
+    .code-func { color: #61afef; }
+    .code-comment { color: #5c6370; font-style: italic; }
+  </style>
+</head>
+
+<body class="font-satoshi bg-white text-text-dark overflow-x-hidden" data-new-gr-c-s-check-loaded="14.1266.0" data-gr-ext-installed="">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm py-5 transform -translate-y-5 opacity-0" style="animation: slide-down 0.5s 0.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
+    <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <a href="https://test.landinghero.app/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 bg-primary-blue rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+          <!-- Cube/Box Icon for Monosend -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 16V8L12 3L3 8V16L12 21L21 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M3.27 6.96L12 12.01L20.73 6.96" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 22.08V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <span class="text-xl font-bold tracking-tight">Monosend</span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8">
+        <a href="https://test.landinghero.app/#features" class="text-sm font-medium tracking-tight text-text-medium hover:text-primary-blue transition-colors">Features</a>
+        <a href="https://test.landinghero.app/#integrations" class="text-sm font-medium tracking-tight text-text-medium hover:text-primary-blue transition-colors">Integrations</a>
+        <a href="https://test.landinghero.app/#customers" class="text-sm font-medium tracking-tight text-text-medium hover:text-primary-blue transition-colors">Customers</a>
+        <a href="https://test.landinghero.app/#pricing" class="text-sm font-medium tracking-tight text-text-medium hover:text-primary-blue transition-colors">Pricing</a>
+        <a href="https://test.landinghero.app/#docs" class="text-sm font-medium tracking-tight text-text-medium hover:text-primary-blue transition-colors">Docs</a>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://test.landinghero.app/#" class="text-sm font-medium text-text-dark hover:text-primary-blue">Sign in</a>
+        <a href="https://test.landinghero.app/#" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-black text-white font-medium tracking-tight text-sm transition-all hover:bg-primary-blue shadow-lg hover:shadow-primary-blue/30">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-text-dark focus:outline-none z-50">
+        <svg id="icon-menu" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center gap-8 pt-24">
+      <a href="https://test.landinghero.app/#features" class="text-2xl font-medium text-text-dark hover:text-primary-blue transition-colors">Features</a>
+      <a href="https://test.landinghero.app/#integrations" class="text-2xl font-medium text-text-dark hover:text-primary-blue transition-colors">Integrations</a>
+      <a href="https://test.landinghero.app/#pricing" class="text-2xl font-medium text-text-dark hover:text-primary-blue transition-colors">Pricing</a>
+      <a href="https://test.landinghero.app/#docs" class="text-2xl font-medium text-text-dark hover:text-primary-blue transition-colors">Docs</a>
+      <a href="https://test.landinghero.app/#" class="px-8 py-3 rounded-full bg-black text-white font-medium text-xl transition-all hover:bg-primary-blue shadow-lg">
+          Get Started
+      </a>
+  </div>
+
+  <main><section class="pt-32 pb-16 bg-white overflow-hidden" id="hero-section">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Column: Text -->
+    <div class="flex flex-col gap-8 items-start relative z-10 parallax-layer" data-speed="5" style="transform: translateX(-0.72px) translateY(-0.605px);">
+      <div class="flex flex-col gap-2 is-visible" data-anim="fade-up" data-anim-delay="0.2">
+        <div class="inline-flex items-center gap-2 bg-primary-blue bg-opacity-5 text-primary-blue px-3 py-1.5 rounded-full text-xs font-semibold w-fit border border-primary-blue/20">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-blue opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-blue"></span>
+          </span>
+          New: React Email Integration
+        </div>
+      </div>
+      
+      <h1 class="font-inter-display text-5xl md:text-7xl font-bold leading-[1.05] tracking-tight max-w-lg text-text-dark is-visible" data-anim="fade-up" data-anim-delay="0.3">
+        Email for <br><span class="text-primary-blue">developers</span>
+      </h1>
+      
+      <p class="text-lg leading-relaxed tracking-normal text-text-medium max-w-md font-normal is-visible" data-anim="fade-up" data-anim-delay="0.4">
+        The best API to reach your users. We help developers build, test, and send emails that actually get delivered.
+      </p>
+      
+      <div class="flex items-center gap-4 flex-wrap mt-2 is-visible" data-anim="fade-up" data-anim-delay="0.5">
+        <a href="https://test.landinghero.app/#" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-black text-white font-medium tracking-tight text-base transition-all hover:bg-primary-blue shadow-xl shadow-gray-200 hover:shadow-primary-blue/20 h-14">
+          Get Started
+        </a>
+        <a href="https://test.landinghero.app/#" class="flex items-center gap-2 px-6 py-3.5 rounded-full border border-gray-200 text-text-dark font-medium tracking-tight hover:bg-gray-50 h-14 transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Documentation</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Right Column: Visual/Code -->
+    <div class="relative h-[480px] lg:h-[600px] flex items-center justify-center p-4 is-visible" data-anim="fade-up-scale" data-anim-delay="0.2">
+      <!-- Background Glow -->
+      <div class="parallax-layer absolute opacity-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary-blue/30 to-purple-200/30 blur-[100px] rounded-full pointer-events-none" data-speed="-10" style="transform: translateX(1.44px) translateY(1.21px);"></div>
+      
+      <!-- Code Card -->
+      <div class="parallax-layer w-full max-w-lg bg-[#1e1e1e] rounded-2xl shadow-2xl border border-gray-800 overflow-hidden" data-speed="-15" style="transform: translateX(2.16px) translateY(1.815px);">
+        <div class="flex items-center px-4 py-3 bg-[#252526] border-b border-gray-700 gap-2">
+           <div class="flex gap-1.5">
+             <div class="w-3 h-3 rounded-full bg-[#ff5f56]"></div>
+             <div class="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
+             <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
+           </div>
+           <div class="ml-4 text-xs text-gray-400 font-mono">send-email.ts</div>
+        </div>
+        <div class="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
+          <div class="text-gray-300">
+            <span class="code-keyword">import</span> { Resend } <span class="code-keyword">from</span> <span class="code-string">'monosend'</span>;<br><br>
+            <span class="code-keyword">const</span> resend = <span class="code-keyword">new</span> Resend(<span class="code-string">'re_123456789'</span>);<br><br>
+            <span class="code-keyword">await</span> resend.emails.send({<br>
+            &nbsp;&nbsp;from: <span class="code-string">'onboarding@resend.com'</span>,<br>
+            &nbsp;&nbsp;to: <span class="code-string">'user@gmail.com'</span>,<br>
+            &nbsp;&nbsp;subject: <span class="code-string">'Hello World'</span>,<br>
+            &nbsp;&nbsp;html: <span class="code-string">'&lt;p&gt;Congrats on sending your &lt;strong&gt;first email&lt;/strong&gt;!&lt;/p&gt;'</span><br>
+            });
+          </div>
+        </div>
+      </div>
+      
+      <!-- Floating Element: Success Notification -->
+      <div class="parallax-layer absolute bottom-12 right-0 md:-right-8 lg:right-0 bg-white p-4 pr-8 rounded-xl shadow-xl border border-gray-100 flex items-center gap-3 z-20" data-speed="-25" style="transform: translateX(3.6px) translateY(3.025px);">
+         <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+         </div>
+         <div>
+           <p class="text-xs text-text-light font-bold uppercase tracking-wider">Status</p>
+           <p class="text-base font-bold text-text-dark">Email Delivered</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-24 bg-white" id="features">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-3xl mb-16" data-anim="fade-up">
+      <h2 class="font-inter-display text-4xl font-bold tracking-tight text-text-dark mb-4">
+        Everything you need to <span class="text-primary-blue">send emails</span>
+      </h2>
+      <p class="text-lg text-text-light">
+        Designed for developers who want to move faster. We handle the infrastructure so you can focus on building your product.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="group p-8 rounded-3xl bg-white border border-gray-100 shadow-card hover:shadow-xl hover:border-primary-blue/30 transition-all duration-300" data-anim="fade-up" data-anim-delay="0.1">
+        <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-500 flex items-center justify-center mb-6">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold text-text-dark mb-2">Proven Deliverability</h3>
+        <p class="text-text-light leading-relaxed">
+          Stop worrying about spam folders. We use the best practices to ensure your emails reach the inbox, not spam.
+        </p>
+      </div>
+
+       <!-- Feature 2 -->
+       <div class="group p-8 rounded-3xl bg-white border border-gray-100 shadow-card hover:shadow-xl hover:border-primary-blue/30 transition-all duration-300" data-anim="fade-up" data-anim-delay="0.2">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-primary-blue flex items-center justify-center mb-6">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        </div>
+        <h3 class="text-xl font-bold text-text-dark mb-2">Detailed Analytics</h3>
+        <p class="text-text-light leading-relaxed">
+          Track opens, clicks, and bounces in real-time. Understand how your users are engaging with your emails.
+        </p>
+      </div>
+
+       <!-- Feature 3 -->
+       <div class="group p-8 rounded-3xl bg-white border border-gray-100 shadow-card hover:shadow-xl hover:border-primary-blue/30 transition-all duration-300" data-anim="fade-up" data-anim-delay="0.3">
+        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </div>
+        <h3 class="text-xl font-bold text-text-dark mb-2">Developer Experience</h3>
+        <p class="text-text-light leading-relaxed">
+          SDKs for every major language. Type-safe and documented. Integrate email into your app in minutes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gray-50 border-t border-gray-200 overflow-hidden" id="integrations">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div data-anim="fade-up">
+            <span class="inline-flex items-center gap-2.5 font-inter text-sm font-bold uppercase tracking-widest text-primary-blue mb-4">
+              Designed with React
+            </span>
+            <h2 class="font-inter-display text-4xl md:text-5xl font-bold text-text-dark mb-6 tracking-tight">
+                Code emails like you code your app
+            </h2>
+            <p class="text-lg text-text-light leading-relaxed mb-8">
+                Gone are the days of table-soup HTML. With Monosend, you can build your email templates using React components. It's clean, reusable, and maintainable.
+            </p>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span class="text-text-dark font-medium">Auto-generated HTML &amp; Text versions</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span class="text-text-dark font-medium">Component previews in browser</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs">✓</div>
+                    <span class="text-text-dark font-medium">Compatible with Tailwind CSS</span>
+                </div>
+            </div>
+            
+            <div class="mt-10">
+                <a href="https://test.landinghero.app/#" class="text-primary-blue font-bold hover:text-text-dark transition-colors inline-flex items-center gap-2">
+                    Explore React Integration <span>→</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative" data-anim="fade-up-scale">
+            <!-- Decorative elements behind -->
+            <div class="absolute inset-0 bg-blue-200/20 blur-3xl rounded-full transform rotate-12"></div>
+            
+            <!-- Code Window -->
+             <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+                <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 bg-gray-50/50">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">welcome-email.tsx</span>
+                    <div class="flex gap-2">
+                        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                        <span class="w-2 h-2 rounded-full bg-gray-300"></span>
+                    </div>
+                </div>
+                <div class="p-8 font-mono text-sm">
+                    <div style="color:#333;">
+                        <span class="code-keyword">import</span> { <span class="code-func">Html</span>, <span class="code-func">Button</span> } <span class="code-keyword">from</span> <span class="code-string">"@monosend/components"</span>;<br><br>
+                        <span class="code-keyword">export default function</span> <span class="code-func">WelcomeEmail</span>() {<br>
+                        &nbsp;&nbsp;<span class="code-keyword">return</span> (<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-func">Html</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-func">h1</span>&gt;Welcome to the platform&lt;/<span class="code-func">h1</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="code-func">Button</span> href=<span class="code-string">"https://monosend.com"</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click me<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="code-func">Button</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="code-func">Html</span>&gt;<br>
+                        &nbsp;&nbsp;);<br>
+                        }
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+<section class="py-24 bg-white overflow-hidden" id="customers">
+    <div class="text-center mb-12" data-anim="fade-up">
+        <h2 class="text-3xl font-bold font-inter-display">Developers love Monosend</h2>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-content">
+          <!-- Card 1 -->
+          <div class="w-[350px] bg-white rounded-2xl p-6 border border-gray-100 shadow-card flex flex-col gap-4">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                   <div>
+                       <p class="font-bold text-sm">Guillermo Rauch</p>
+                       <p class="text-xs text-text-light text-opacity-80">@rauchg</p>
+                   </div>
+                   <div class="ml-auto text-primary-blue">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                   </div>
+               </div>
+               <p class="text-sm text-text-medium leading-relaxed">
+                   "Monosend is the Stripe for Email. Incredible DX."
+               </p>
+          </div>
+          <!-- Card 2 -->
+          <div class="w-[350px] bg-white rounded-2xl p-6 border border-gray-100 shadow-card flex flex-col gap-4">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                   <div>
+                       <p class="font-bold text-sm">Lee Robinson</p>
+                       <p class="text-xs text-text-light text-opacity-80">@leeerob</p>
+                   </div>
+                    <div class="ml-auto text-primary-blue">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                   </div>
+               </div>
+               <p class="text-sm text-text-medium leading-relaxed">
+                   "Literally integrated in 5 minutes. The logs are beautiful."
+               </p>
+          </div>
+          <!-- Card 3 -->
+           <div class="w-[350px] bg-white rounded-2xl p-6 border border-gray-100 shadow-card flex flex-col gap-4">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                   <div>
+                       <p class="font-bold text-sm">Zeno Rocha</p>
+                       <p class="text-xs text-text-light text-opacity-80">@zenorocha</p>
+                   </div>
+                   <div class="ml-auto text-primary-blue">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                   </div>
+               </div>
+               <p class="text-sm text-text-medium leading-relaxed">
+                   "Finally an email service that treats developers as first class citizens."
+               </p>
+          </div>
+          <!-- Card 4 (Duplicate for seamless loop) -->
+           <div class="w-[350px] bg-white rounded-2xl p-6 border border-gray-100 shadow-card flex flex-col gap-4">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                   <div>
+                       <p class="font-bold text-sm">Guillermo Rauch</p>
+                       <p class="text-xs text-text-light text-opacity-80">@rauchg</p>
+                   </div>
+                   <div class="ml-auto text-primary-blue">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                   </div>
+               </div>
+               <p class="text-sm text-text-medium leading-relaxed">
+                   "Monosend is the Stripe for Email. Incredible DX."
+               </p>
+          </div>
+           <div class="w-[350px] bg-white rounded-2xl p-6 border border-gray-100 shadow-card flex flex-col gap-4">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 rounded-full bg-gray-200"></div>
+                   <div>
+                       <p class="font-bold text-sm">Lee Robinson</p>
+                       <p class="text-xs text-text-light text-opacity-80">@leeerob</p>
+                   </div>
+                    <div class="ml-auto text-primary-blue">
+                       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                   </div>
+               </div>
+               <p class="text-sm text-text-medium leading-relaxed">
+                   "Literally integrated in 5 minutes. The logs are beautiful."
+               </p>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="py-24 bg-primary-blue" id="pricing">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
+        <div class="text-white" data-anim="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold font-inter-display mb-6">Simple, transparent pricing.</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-md">No hidden fees. No credit card required to start testing.</p>
+            <ul class="flex flex-col gap-4 mb-10">
+                <li class="flex items-center gap-3 text-blue-50 font-medium">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    3,000 emails / month free
+                </li>
+                 <li class="flex items-center gap-3 text-blue-50 font-medium">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    Unlimited domains
+                </li>
+                 <li class="flex items-center gap-3 text-blue-50 font-medium">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    1-day log retention included
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Interactive Cost Calculator (Simulated) -->
+        <div class="bg-white rounded-3xl p-10 shadow-2xl relative overflow-hidden" data-anim="fade-up" data-anim-delay="0.2">
+            <div class="flex flex-col gap-8">
+               <div class="flex justify-between items-end border-b border-gray-100 pb-8">
+                   <div class="flex flex-col gap-2">
+                       <span class="text-sm font-bold text-gray-400 uppercase tracking-wider">Estimated Cost</span>
+                       <span class="text-5xl font-bold text-text-dark">$20<span class="text-xl text-text-light font-medium">/mo</span></span>
+                   </div>
+                   <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-2">
+                       Pro Plan
+                   </div>
+               </div>
+               
+               <div class="space-y-6">
+                   <div class="flex justify-between text-sm font-medium">
+                       <span>Emails sent per month</span>
+                       <span class="font-bold">50,000</span>
+                   </div>
+                   <input type="range" class="w-full h-2 bg-gray-100 rounded-lg appearance-none cursor-pointer accent-primary-blue" value="50">
+                   <p class="text-xs text-text-light text-center">Drag to estimate your volume</p>
+               </div>
+               
+               <a href="https://test.landinghero.app/#" class="w-full py-4 text-center rounded-xl bg-black text-white font-bold hover:bg-gray-800 transition-colors shadow-lg">
+                   Start for free
+               </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-24 bg-white" data-anim="fade-up">
+    <div class="max-w-3xl mx-auto px-6 text-center flex flex-col gap-8 items-center">
+        <h2 class="text-4xl md:text-5xl font-bold font-inter-display tracking-tight text-text-dark">Ready to send?</h2>
+        <p class="text-lg text-text-light leading-relaxed">
+            Join thousands of developers building the future of communication. Start sending emails in minutes.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+            <a href="https://test.landinghero.app/#" class="flex-1 inline-flex items-center justify-center px-8 py-4 rounded-full bg-black text-white font-bold text-lg hover:bg-gray-800 transition-colors shadow-xl">
+                Get Started
+            </a>
+            <a href="https://test.landinghero.app/#" class="flex-1 inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-text-dark font-bold text-lg border border-gray-200 hover:bg-gray-50 transition-colors">
+                Contact Sales
+            </a>
+        </div>
+    </div>
+</section></main>
+
+  <footer class="py-16 bg-white border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-8">
+        <div class="lg:col-span-4 flex flex-col gap-6 items-start pr-5">
+          <a href="https://test.landinghero.app/" class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-primary-blue rounded-lg flex items-center justify-center">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 16V8L12 3L3 8V16L12 21L21 16Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <span class="text-lg font-bold tracking-tight">Monosend</span>
+          </a>
+          <p class="text-sm text-text-light leading-relaxed max-w-xs">Email for developers. The best API to reach your users, designed for speed and reliability.</p>
+          <div class="flex gap-4">
+             <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+             <span class="text-xs font-medium text-text-medium">All systems operational</span>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-text-dark mb-2">Product</h4>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Email API</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Templates</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Analytics</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Logs</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-text-dark mb-2">Resources</h4>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Documentation</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">API Reference</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Integrations</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Examples</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-text-dark mb-2">Company</h4>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">About</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Blog</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Careers</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Legal</a>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-text-dark mb-2">Social</h4>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">GitHub</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Twitter (X)</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">LinkedIn</a>
+              <a href="https://test.landinghero.app/#" class="text-sm text-text-light hover:text-primary-blue transition-colors">Discord</a>
+            </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-xs text-text-light">© 2024 Monosend Inc. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a href="https://test.landinghero.app/#" class="text-xs text-text-light hover:text-text-dark">Privacy</a>
+            <a href="https://test.landinghero.app/#" class="text-xs text-text-light hover:text-text-dark">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // 1. SCROLL REVEAL LOGIC
+      const animatedElements = document.querySelectorAll('[data-anim]');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.dataset.animDelay) || 0;
+            setTimeout(() => {
+              entry.target.classList.add('is-visible');
+            }, delay * 1000);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      animatedElements.forEach(el => observer.observe(el));
+
+      // 2. MOBILE MENU LOGIC
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconMenu = document.getElementById('icon-menu');
+      const iconClose = document.getElementById('icon-close');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('translate-x-full');
+          iconMenu.classList.toggle('hidden');
+          iconClose.classList.toggle('hidden');
+          document.body.style.overflow = mobileMenu.classList.contains('translate-x-full') ? '' : 'hidden';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            iconMenu.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      // 3. HERO PARALLAX LOGIC
+      const heroSection = document.getElementById('hero-section');
+      if (heroSection) {
+        heroSection.addEventListener('mousemove', (e) => {
+            const layers = heroSection.querySelectorAll('.parallax-layer');
+            const x = (window.innerWidth - e.pageX * 2) / 100;
+            const y = (window.innerHeight - e.pageY * 2) / 100;
+
+            layers.forEach(layer => {
+                const speed = layer.getAttribute('data-speed') || 10;
+                const xPos = x * (speed / 10); 
+                const yPos = y * (speed / 10);
+                layer.style.transform = `translateX(${xPos}px) translateY(${yPos}px)`;
+            });
+        });
+
+        // Reset positions on leave
+        heroSection.addEventListener('mouseleave', () => {
+             const layers = heroSection.querySelectorAll('.parallax-layer');
+             layers.forEach(layer => {
+                 layer.style.transform = 'translateX(0) translateY(0)';
+             });
+        });
+      }
+
+    });
+  </script>
+
+
+<div id="promptbox_extension_root"><template shadowrootmode="closed"><style><style>
+    * {
+        font-size: unset !important;
+
+    }
+</style></style><div><div class="prompt-box"></div></div></template></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
