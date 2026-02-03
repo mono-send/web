@@ -1,0 +1,23 @@
+# MonoSend
+
+> MonoSend (monosend.io) is an API-first email marketing automation platform for developers, marketers, and AI agents. Build sophisticated email workflows, manage contacts and segments, create beautiful templates, and track deliverability with comprehensive analytics.
+
+## Product Overview
+
+MonoSend combines developer-friendly APIs with visual workflow automation:
+- **Email API**: Send transactional and marketing emails with industry-leading deliverability
+- **Workflow Automation**: Visual drag-and-drop email sequences with conditional logic
+- **Template Builder**: React-based email templates with AI-assisted generation
+- **Contact Management**: Segments, custom fields, and audience targeting
+- **Analytics**: Real-time tracking for sends, opens, clicks, bounces, and complaints
+- **Domain Management**: DNS verification, DKIM/SPF/DMARC configuration
+
+## Primary Sources
+
+- [Documentation](https://docs.monosend.io/): Complete guides, API reference, concepts, and best practices (primary source for implementation)
+- [App Dashboard](https://app.monosend.io/): Access API keys, domains, templates, workflows, contacts, logs, webhooks, analytics (requires authentication)
+- [Marketing Homepage](https://monosend.io/): Product overview, pricing, feature comparison, sign-up
+
+## API Resources
+
+### Base URL
